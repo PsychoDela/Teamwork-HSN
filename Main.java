@@ -4,7 +4,7 @@ public class Main
 {
 	public static void main(String[] args)
 	{
-		alala
+		
 	}
 	
 	public static int stringLength(String string)
