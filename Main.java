@@ -1,5 +1,3 @@
-import java.util.ArrayList;
-
 public class Main 
 {
 	public static void main(String[] args)
@@ -12,12 +10,12 @@ public class Main
 		return 0;
 	}
 	
-	public static ArrayList <String> charsOnEvenNums(String string)
+	public static String charsOnEvenNums(String string)
 	{
 		return null;
 	}
 	
-	public static ArrayList <String> charsOnOddNums(String string)
+	public static String charsOnOddNums(String string)
 	{
 		return null;
 	}
@@ -29,10 +27,20 @@ public class Main
 	
 	public static int numOfLowercaseChars(String string)
 	{
-		return 0;
+		int charCount = 0;
+		
+		for (int i = 0; i < string.length(); i++)
+		{
+			if (Character.isLowerCase(string.charAt(i)))
+			{
+				charCount++;
+			}
+		}
+		
+		return charCount;
 	}
 	
-	public static ArrayList <String> charsWhichNotLetters(String string)
+	public static String charsWhichNotLetters(String string)
 	{
 		return null;
 	}
