@@ -7,7 +7,10 @@ public class Main
 	
 	public static int stringLength(String string)
 	{
-		return 0;
+		if (string.length() == 0) {
+			return 0;
+		} else
+			return string.length();
 	}
 	
 	public static String charsOnEvenNums(String string)
