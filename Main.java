@@ -17,14 +17,30 @@ public class Main
 		return null;
 	}
 	
-	public static ArrayList <String> charsOnOddNums(String string)
+	public static int charsOnOddNums(String string)
 	{
-		return null;
+		int charCount = 0;
+		for(int i = 0; i <string.length(); i++)
+		{
+			if (i % 2 != 0)
+			charCount++;
+		}
+		return charCount;
 	}
 	
 	public static int numOfUppercaseChars(String string)
 	{
-		return 0;
+		int charCount = 0;
+		
+		for (int i = 0; i < string.length(); i++)
+		{
+			if (Character.isUpperCase(string.charAt(i)))
+			{
+				charCount++;
+			}
+		}
+		
+		return charCount;
 	}
 	
 	public static int numOfLowercaseChars(String string)
