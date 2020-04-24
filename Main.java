@@ -1,8 +1,22 @@
+import java.util.Scanner;
+
 public class Main 
 {
 	public static void main(String[] args)
 	{
+		String test;
+		Scanner sc = new Scanner (System.in);
 		
+		System.out.println("Unesite string: ");
+		test = sc.nextLine();
+		sc.close();
+		
+		System.out.println(stringLength(test));
+		System.out.println(charsOnEvenNums(test));
+		System.out.println(charsOnOddNums(test));
+		System.out.println(numOfUppercaseChars(test));
+		System.out.println(numOfLowercaseChars(test));
+		System.out.println(charsWhichNotLetters(test));
 	}
 	
 	public static int stringLength(String string)
