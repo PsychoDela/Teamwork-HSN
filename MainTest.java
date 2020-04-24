@@ -6,6 +6,7 @@ public class MainTest
 {
 	static String string1 = "lowercase";
 	static String string2 = "UPPERCASE";
+	static String string3 = "/a/a-a*a/a-a*a-a";
 	
 	String prazanString;
 	String maliString;
@@ -68,5 +69,10 @@ public class MainTest
 	public void charsOnOddNums()
 	{
 		assertEquals("'lowercase' should have 4 characters on odd positions", 4, Main.charsOnOddNums(string1));
+	}
+	
+	public void charsWhichNotLettersTest()
+	{
+		assertEquals("'/a/a-a*a/a-a*a-a' should return '//-*/-*-'", "//-*/-*-", Main.charsWhichNotLetters(string3));
 	}
 }
