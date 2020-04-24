@@ -12,9 +12,15 @@ public class Main
 		return 0;
 	}
 	
-	public static ArrayList <String> charsOnEvenNums(String string)
+	public static String charsOnEvenNums(String string)
 	{
-		return null;
+		String charactersOnEvenPositions = "";
+		for(int i = 0; i < string.length(); i++) {
+			if(i % 2 == 0) {
+				charactersOnEvenPositions += string.charAt(i);
+			}
+		}
+		return charactersOnEvenPositions;
 	}
 	
 	public static ArrayList <String> charsOnOddNums(String string)
