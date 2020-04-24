@@ -28,19 +28,19 @@ public class MainTest
 
 	@Test
 	public void shouldReturn0WhenStringIsEmpty() {
-		int rez = main.stringLength(prazanString);
+		int rez = Main.stringLength(prazanString);
 		assertEquals(0, rez);
 	}
 
 	@Test
 	public void shouldReturn3WhenThereIsOneWord() {
-		int rez = main.stringLength(maliString);
+		int rez = Main.stringLength(maliString);
 		assertEquals(3, rez);
 	}
 
 	@Test
 	public void shouldReturn7WhenThereIsMoreThanOneWord() {
-		int rez = main.stringLength(velikiString);
+		int rez = Main.stringLength(velikiString);
 		assertEquals(7, rez);
 	}
 	
@@ -55,5 +55,18 @@ public class MainTest
 	public void shouldReturnNullWhenIsEmpty()
 	{
 		assertEquals("when empty should return null", 0, Main.numOfLowercaseChars(""));
+	}
+	
+	@Test
+	public void numOfUppercaseCharsTest() 
+	{	
+		assertEquals("'lowercase' should have 0 lowercase letters", 0, Main.numOfUppercaseChars(string1));
+		assertEquals("'UPPERCASE' should have 9 lowercase letters", 9, Main.numOfUppercaseChars(string2));
+	}
+	
+	@Test
+	public void charsOnOddNums()
+	{
+		assertEquals("'lowercase' should have 4 characters on odd positions", 4, Main.charsOnOddNums(string1));
 	}
 }
