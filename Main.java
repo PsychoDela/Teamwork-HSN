@@ -42,6 +42,16 @@ public class Main
 	
 	public static String charsWhichNotLetters(String string)
 	{
-		return null;
+		String chars = "";
+		
+		for (int i = 0; i < string.length(); i++)
+		{
+			if (Character.isAlphabetic(string.charAt(i)) == false)
+			{
+				chars += string.charAt(i);
+			}
+		}
+		
+		return chars;
 	}
 }

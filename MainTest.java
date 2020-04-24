@@ -6,6 +6,7 @@ public class MainTest
 {
 	static String string1 = "lowercase";
 	static String string2 = "UPPERCASE";
+	static String string3 = "/a/a-a*a/a-a*a-a";
 	
 	@Test
 	public void numOfLowercaseCharsTest() 
@@ -18,5 +19,11 @@ public class MainTest
 	public void shouldReturnNullWhenIsEmpty()
 	{
 		assertEquals("when empty should return null", 0, Main.numOfLowercaseChars(""));
+	}
+	
+	@Test
+	public void charsWhichNotLettersTest()
+	{
+		assertEquals("'/a/a-a*a/a-a*a-a' should return '//-*/-*-'", "//-*/-*-", Main.charsWhichNotLetters(string3));
 	}
 }
