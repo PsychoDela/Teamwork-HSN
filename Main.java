@@ -29,7 +29,13 @@ public class Main
 	
 	public static String charsOnEvenNums(String string)
 	{
-		return null;
+		String charactersOnEvenPositions = "";
+		for(int i = 0; i < string.length(); i++) {
+			if(i % 2 == 0) {
+				charactersOnEvenPositions += string.charAt(i);
+			}
+		}
+		return charactersOnEvenPositions;
 	}
 	
 	public static String charsOnOddNums(String string)
