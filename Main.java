@@ -32,15 +32,15 @@ public class Main
 		return null;
 	}
 	
-	public static int charsOnOddNums(String string)
+	public static String charsOnOddNums(String string)
 	{
-		int charCount = 0;
+		String str = "";
 		for(int i = 0; i <string.length(); i++)
 		{
 			if (i % 2 != 0)
-			charCount++;
+			str+= string.charAt(i);
 		}
-		return charCount;
+		return str;
 	}
 	
 	public static int numOfUppercaseChars(String string)

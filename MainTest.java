@@ -68,7 +68,7 @@ public class MainTest
 	@Test
 	public void charsOnOddNums()
 	{
-		assertEquals("'lowercase' should have 4 characters on odd positions", 4, Main.charsOnOddNums(string1));
+		assertEquals("'lowercase' should have 4 characters on odd positions", "oecs", Main.charsOnOddNums(string1));
 	}
 	
 	public void charsWhichNotLettersTest()
