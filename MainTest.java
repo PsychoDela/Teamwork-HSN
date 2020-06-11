@@ -14,7 +14,7 @@ public class MainTest
 
 	Main main;
 
-	@BeforeEach
+	/*@BeforeEach
 	public void NapraviObjekt() {
 		main = new Main();
 		prazanString = "";
@@ -31,7 +31,7 @@ public class MainTest
 	public void shouldReturn0WhenStringIsEmpty() {
 		int rez = Main.stringLength(prazanString);
 		assertEquals(0, rez);
-	}
+	}*/
 
 	@Test
 	public void shouldReturn3WhenThereIsOneWord() {
@@ -79,7 +79,8 @@ public class MainTest
 
 	@Test
 	public void charactersOnEvenPositionsWhenStringExists() {
-		Main main = new Main();
-		String result = main.charsOnEvenNums("Zelena kuca");
+		//Main main = new Main();
+		String result = Main.charsOnEvenNums("Zelena kuca");
 		assertEquals("Zln ua", result);
+}
 }
